@@ -403,7 +403,7 @@ esp_Loop = rs.RenderStepped:Connect(function()
 
     local hrp = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 
-     for _,Folders in pairs(game.Workspace.AiZones:GetChildren()) do
+     --[[for _,Folders in pairs(game.Workspace.AiZones:GetChildren()) do
         for _,Bot in pairs(Folders:GetChildren()) do
             if Bot and esp.customsettings.enabled and Bot:FindFirstChild("HumanoidRootPart") and (hrp.Position - Bot.HumanoidRootPart.Position).Magnitude <= esp.customsettings.maxdist and Bot.Humanoid.Health >= 1 then
 
@@ -452,7 +452,7 @@ esp_Loop = rs.RenderStepped:Connect(function()
             end
         end
     end
-end)
+end)]]--
 
 local function DrawLine()
     local l = Drawing.new("Line")
